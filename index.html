@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/aside.css" />
+  </head>
+  <body>
+    <!-- navbar of youtube  -->
+    <nav>
+      <div class="left">
+        <div class="icon">
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+
+        <div class="logo">
+          <a href="./index.html"> <img src="./assets/Logo.png" /></a>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="input">
+          <input type="search" placeholder="Search" id="search" class="search"/>
+          <button type="button">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+          <div class="searchElement" id="searchElement"></div>
+        </div>
+        <div class="icon">
+            <span class="material-symbols-outlined"> mic </span>
+        </div>
+      </div>
+      <div class="right">
+        <div class="icon">
+          <span class="material-symbols-outlined"> video_call </span>
+        </div>
+        <div class="icon">
+          <span class="material-symbols-outlined"> apps </span>
+        </div>
+        <div class="icon">
+          <span class="material-symbols-outlined"> notifications </span>
+        </div>
+        <div class="profile">
+            <a href="./index.html"> <img src="./assets/Profile-pic.png" /></a>
+          </div>
+      </div>
+    </nav>
+
+    <!-- aside of the youtube  -->
+    <div class="main-part">
+      <aside>
+        <div class="sidebar">
+          <ul class="sidebar-menu">
+            <li class="active">
+              <span class="material-symbols-outlined"> home </span
+              ><a href="#">Home</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> home </span>
+              <a href="#">Trending</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> subscriptions </span
+              ><a href="#">Subscriptions</a>
+            </li>
+            <hr />
+            <li>
+              <span class="material-symbols-outlined"> video_library </span
+              ><a href="#">Library</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> history </span
+              ><a href="#">History</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> slideshow </span
+              ><a href="#">Your Videos</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> pace </span>
+              <a href="#">Watch Later</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> thumb_up </span
+              ><a href="#">Liked Videos</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> expand_more </span
+              ><a href="#">Show More</a>
+            </li>
+            <hr />
+            <h5>Subscriptions</h5>
+            <li><a href="#">Apna College</a></li>
+            <li><a href="#">Neso Academy</a></li>
+            <li><a href="#">Dice Media</a></li>
+            <li><a href="#">Timeliners</a></li>
+            <li><a href="#">freeCodeCamp.org</a></li>
+            <li><a href="#">PepCoding</a></li>
+            <li>
+              <span class="material-symbols-outlined"> expand_more </span>
+              <a href="#">Show 25 more</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- main body  -->
+      <main>
+        <section>
+          <div class="menu">
+            <ul class="menu-bar">
+              <li style="background-color: white; color: black">All</li>
+              <li>Bollywood Music</li>
+              <li>Computer Programming</li>
+              <li>Music</li>
+              <li>Live</li>
+              <li>Mantras</li>
+              <li>Mixes</li>
+              <li>Watched</li>
+              <li>Comedy</li>
+              <li>Gadgets</li>
+              <li>Physics</li>
+            </ul>
+          </div>
+        </section>
+        <div id="videos-container">Loading...</div>
+      </main>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
